@@ -1,9 +1,7 @@
 # This is a Python script for direct control of the AttoDRY2100 cryostat.
 # It depends on the .dll files provided by Attocube (AttoDRYLib.dll) which
-# has to be referred to in the dll_directory variable. Not all functions
-# are implemented in the given code, since control is still maintained with
-# the attoDRY labview interface. All additional function names are found in the dll_list.txt
-# file. 
+# has to be referred to in the dll_directory variable. All functions
+# are implemented in the given code, but not all functions are tested.
 # You need to install the 2016 labview runtime engine. Additinally, the 
 # script will only work with a 32 bit python version. 
 #
@@ -11,7 +9,6 @@
 # Christoph Murer
 # Magnetism and interface Physics, ETH Zurich
 # christoph.murer@mat.ethz.ch or chmurer@gmail.com
-# script started on 04-Sep-2020
 # inspired by the ANC350 scrips written by Rob Heath and Brian Schaefer (https://github.com/Laukei/pyanc350)
 
 # define the path to the AttoDRY DLL:
