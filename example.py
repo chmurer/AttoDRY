@@ -1,4 +1,4 @@
-from PyAttoDRY2100 import AttoDRY
+from PyAttoDRY import AttoDRY
 import time
 
 print('Connect to the AttoDRY')
@@ -27,6 +27,7 @@ print('The current temeperature is: '+str(T)+' K')
 time.sleep(1.0)
 
 AttoDRY.setUserMagneticField(0.01)
+time.sleep(0.1)
 AttoDRY.setUserTemperature(1.9)
 
 print('Both magnetic field and temperature have been set to new values. This will not change anything as long as field and temperature control are not toggled.')
